@@ -1,0 +1,42 @@
+Supervised Learning
+
+Supervised learning is an algorithm that is trained using labeled examples, such as an input where the desired output is known.
+For example, a segment of text could could have a category label, such as:
+    - Spam vs Legitimate Email
+    - Positve vs Negative Movie Review
+
+This works by creating a network that receives a set of inputs along with the corresponding correct outputs, and the algorithm
+learns by comparing its actual output with correct outputs to find errors. Afterwards, it modifies the model accordingly.
+
+Supervised learning is commonly used in applications where historical data is used to predict likely future events.
+
+Machine Learning Process:
+Starts with Data Acquisition, then to Data Cleaning, the data is broken into Training and Test sets.
+The Training set is used in Model Training & Building to be trained and validated against the Test set, 
+it loops until it achieves a satisfactory level of accuracy in Model Testing. The last step is Model Deployment, 
+where the model is deployed to production.
+
+Data Acquisition:
+    Collecting relevant data from various sources, such as customers, sensors, etc.
+
+Data Cleaning:
+    Clean and format the data using Pandas
+
+Split data into Training and Test sets:
+    - Model Training & Building - Uses the training data to train the model
+    - Test Data - Used to evaluate the performance and accuracy of the model
+
+Model Testing:
+    - Test the model against the test data, and make changes to the model parameters as needed to improve its accuracy
+    to Model Training & Building
+
+Model Deployment:
+    Deploy the model to production for real-world use.
+
+Data is often split into 3 sets:
+    - Training Data:
+        Used to train the model parameters
+    - Validation Data:
+        Used to determine what model hyperparameters to adjust
+    - Test Data:
+        Used to get some final performance metrics on the model

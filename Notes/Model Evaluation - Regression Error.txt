@@ -1,0 +1,29 @@
+Regression Error
+
+Regression is when a model attempts to predict continuous values.
+
+Three most common evaluation metrics for regression:
+
+- Mean Absolute Error (MAE)
+    - The mean of the absolute value of errors.
+    - It is measured as the average absolute difference between the predicted and actual values.
+    - Used to measure how accurately a regression model is.
+    - However it will not punish large errors.
+
+- Mean Squared Error (MSE)
+    - The mean of the squared errors.
+    - Larger errors are noted more than MAE.
+    - Measures the average squared difference between predicted values and the actual values in the dataset.
+    - 
+    
+- Root Mean Square Error (RMSE)
+    - The square root of the mean of the squared errors.
+    - It is mainly used in regression analysis and forecasting, where accuracy matters significantly.
+    - The lower the RMSE, the better the model's prediction accuracy.
+
+Compare the error metrics to the average value of the label in the dataset to try to get an intuition of its
+overall performance. Context is important, as the scales of the errors and the average value of the label can
+vary widely.
+
+Regression metrics help the predictive model to evaluate its performance, helping to make better decisions about
+overall performance evaluation.

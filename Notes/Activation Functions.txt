@@ -1,0 +1,39 @@
+Activation Functions
+
+An activation function in a neural network is a mathematical function applied to the output of a neuron.
+It introduces non-linearity, enabling the model to learn and represent complex data patterns. Without it, deep neural networks would
+behave like a simple linear regression model. Activation functions decide whether a neuron should be activated based on the weighted
+sum of inputs and a bias term. They also make backpropagation possible by providing gradients for weight updates.
+
+Non-linearity is important because real-world data is rarely linearly separable, non-linear functions allow neural networks to form
+curved decision boundaries, making them capable of handling complex patterns (ex; classifying apples vs bananas under varying colors
+and shapes), and they ensure networks can model advanced problems llike image recognition, natural language processing, and speech
+processing.
+
+Types of Activation Functions in Deep Learning:
+    - Linear Activation Function
+        Linear Activation Function resembles straight line defined by y = x. No matter how many layers the neural network contains,
+        if they all use linear activation functions the output is a linear combination of the input.
+        The range of the output spans from negative infinity to positive infinity.
+        Linear activation functions are used at just one place, the output layer.
+        Using linear activation across all layers make the network's ability to learn complex patterns limited.
+        Linear activation functions are useful for specific tasks but must be combined with non-linear functions to enhance the neural
+        network's learning and predictive capabilities.
+
+    - Non-Linear Activation Functions:
+        - Sigmoid Function
+            Allows neural networks to handle and model complex patterns that linear equations cannot.
+            The output ranges between 0 and 1, making it useful for binary classification.
+            The function shows a steep gradient when x values are between -2 and 2. This means that small changes in input x can cause
+            significant changes in output y which is criticall during the training process.
+        - ReLU (Rectified Linear Unit) Function
+            Has a value range between 0 and positive infinity, meaning it only outputs non-negative values.
+            It is a non-linear activation function, allowing neural networks to learn complex patterns and making backpropagation more efficient.
+            ReLU is less computationally expensive because it involves simpler mathematical operations. At a time only a few neurons are activated
+            making the network sparse thus making it efficient and easy for computation.
+        - Leaky ReLU Function
+            Similar to ReLU but allows a small negative slope instead of zero.
+            Solves the "dying ReLU" problem, where neurons get stuck with zero outputs.
+            Has a range of negative infinity to positive infinity.
+            Making it more preferred in some cases for better gradient flow.
+        

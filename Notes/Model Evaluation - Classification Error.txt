@@ -1,0 +1,43 @@
+Classification Error
+
+Classification metrics are used to evaluate how well a model did.
+
+Key Classification Metrics: 
+    - Accuracy:
+        The number of correct predictions made by the model divided by the total number of predictions.
+        Accuracy is not a good choice with unbalanced classes.
+
+    - Recall:
+        The ability of a model to find all the relevant cases within a dataset.
+        Recall is the number of true positives divided by the number of true positives plus the number of false negatives.
+
+    - Precision:
+        The ability of a model to identify only the relevant data points.
+        Precision is defined as the number of true positives divided by the number of true positives plus the number of false positives.
+
+    - F1-Score:
+        In cases where we want to find an optimal blend of precision and recall we can combine the two metrics using the F1-Score.
+        The F1-Score is the harmonic mean of precision and recall taking both metrics into account simultaneously.
+        The harmonic mean is used instead of a simple average because it punishes extreme values, making a fairer assessment.
+        A classifier with a precision of 1.0 and a recall of 0.0 has a simple average of 0.5 but an F1 score of 0.0.
+        Equation:
+            F1 = 2 * (precision * recall) / (precision + recall)
+
+The confusion matrix is a tool to help visualize the performance of a classification model.
+    True Positive (TP):
+        Model makes a correct prediction. The outcome was predicted to be positive and was positive.
+    False Negative (FN): (type II error)
+        Model makes an incorrect prediction. The outcome was predicted to be negative but was positive.
+    Flase Positive (FP): (Type I error)
+        Model makes an incorrect prediction. The outcome was predicted to be positive but was negative.
+    True Negative (TN):
+        Model makes a correct prediction. The outcome was predicted to be negative and was negative.
+
+In any classification task, the model can only achieve two results, either it is correct or incorrect in its prediction.
+Recall has the ability to find all relevant instances in a dataset, while precision expresses the proportion of the data points
+the model says was relevant were relevant.
+
+Model evaluation metrics need to be chosen based on the specific situation and the goals of what the model needs to achieve.
+
+Often there are precision and recall trade offs. It is important to decide if the model will focus on fixing False Positives vs
+False Negatives.

@@ -1,0 +1,29 @@
+Perceptron Model
+
+The perceptron model is the simplest type of neural network that makes decisions by combining inputs with weights and
+applying an activation function. It is mainly used for binary classification problems. It forms the basic building
+block for many deep learning models. It works by taking multiple inputs and assigns weights to them, computes
+a weighted sum and applies a threshold, outputs either 0 or 1 (binary outcome), and then forms the foundation of larger
+neural networks.
+
+Components:
+    - Inputs (X1, X2, ...Xn)
+        Inputs are the features or measurable attributes of a data point that the model uses to make a decision. Each input
+        provides a signal that contributes to the final output. Input themselves have no inherent influence unless multiplied
+        by weights.
+    - Weights (W1, W2, ... Wn)
+        Weights determine how strongly each input contributes to the prediction. A larger weight means the corresponding input
+        has a higher impact. Weights are learned during training, and adjusted based on errors. They act like importance scores
+        for each feature. Weights control how much each input influences the output, tilting the line.
+    - Bias (b)
+        The bias is a constant value added to the weighted sum to shift the decision boundary. It allows the model to classify
+        correctly even when all inputs features are zero. Bias ensures the model is not forced to pass the decision boundary through
+        the origin. Bias controls when the model activates, independent of any inputs, shifting the line up/down or left/right.
+    - Net Input (Weighted Sum)
+        This is the combined effect of all inputs and their weights. It represents the activation strength before passing through
+        the activation function. If the net input is high or low enough, it determines the final class.
+    - Activation Function (Step Function)
+        The activation function converts the numerical input into a binary output (0 or 1). It introduces non-linearity in the
+        decision-making, although the decision boundary remains linear. Output is always 0 or 1 making it suitable for binary
+        classification.
+        

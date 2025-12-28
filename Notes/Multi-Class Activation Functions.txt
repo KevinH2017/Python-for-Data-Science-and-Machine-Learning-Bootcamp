@@ -1,0 +1,14 @@
+Multi-Class Activation Functions
+
+Multi-class activation functions take on a specialized role in helping models determine the probability that of a given
+input beloging to a specific class. The easiest way to organize multiple classes is to have one output node per class.
+
+There are 2 main types of multi-class situations:
+    - Non-Exclusive Classes
+        A data point can have multiple classes/categories assigned to it.
+        EX: Photos can have multiple tags like beach, family, vacation, etc.
+    - Mutually Exclusive Classes
+        Only one class per data point.
+        EX: Photos can be categorized as being grayscale or full color but not both at the same time.
+
+To organize multiple classes, you must organize categories for the output layer.

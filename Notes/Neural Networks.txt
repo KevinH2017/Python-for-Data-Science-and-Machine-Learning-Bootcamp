@@ -1,0 +1,16 @@
+Neural networks
+
+A neural network extends the perceptron model by connecting many neurons across multiple layers.
+Layers:
+    - Input Layer
+        The input layer provides the network with the raw feature vector. No computation happens here; it simply passes
+        the input values to the next layer.
+    - Hidden Layers
+        Hidden layers contain multiple perceptrons (neurons) that learn intermediate representations of the data.
+        Where weights, biases, and the non-linear activation function are applied. Hidden layers identify complex patterns
+        not visible from raw input alone. More hidden layers are added to improve model expressiveness.
+    - Output Layer
+        The output layer produces the final prediction, which may be binary, multi-class or a continuous value. The output
+        activation depends on the task (eg. sigmoid for binary classification, softmax for multi-class, linear for regression).
+        Because of multiple layers and non-linear activations, neural networks can model complex, non-linear decision boundaries,
+        while a single perceptron can only model a straight line.
