@@ -1,0 +1,45 @@
+Cost Functions and Gradient Descent
+
+Cost functions (also known as a loss function) are mathematical formulas used to calculate how well a model is performing. 
+This is done by measuring the difference between the predicted value and the actual data. While MSE (Mean Squared Error) 
+is commonly used, there are multiple types of cost functions in linear regression.
+
+Types of Cost Function in Linear Regression:
+    - Mean Absolute Error (MAE)
+        Mean Absolute Error (MAE) calculates the average of the absolute differences between actual and predicted values. Unlike
+        MSE, MAE does not penalize large errors as heavily which can be useful when dealing with outliers or when we want a simpler
+        interpretation of error.
+
+    - Root Mean Squared Error (RMSE)
+        Root Mean Squared Error (RMSE) is the square root of the MSE providing an error measure in the same units as the target variable.
+        This makes it easier to interpret compared to MSE as it returns an error value in the same scale as the dependent variable.
+        RMSE is important when you need an interpretable measure of error that maintains sensitivity to larger mistakes making it
+        suitable for many regression tasks.
+
+    - R-squared (Coefficient of Determination)
+        R-squared (R^2) measures the proportion of the variance in the dependent variable that is explained by the independent variables
+        in the model. It is widely used as a metric for evaluating the explanatory power of a linear regression model. It is useful for
+        linear regression models where the relationship between the variables in non-linear.
+
+    - Huber Los
+        Huber Loss is a mix of MSE and MAE which is designed to be less sensitive to outliers while still maintaining the benefits of both.
+        It is useful when datasets contain outliers as it behaves like MSE for small errors and like MAE for large errors.
+
+Each function has its strengths and weaknesses and the choice of which to use depends on the specific problem you are trying to solve.
+By using the right cost function, you can increase the accuracy and performance of linear regression models which helps in leading to 
+better predictions.
+
+Gradient Descent is an optimization algorithm in linear regression to find the best-fit line for the data. It works by gradually adjusting
+the line's slope and intercept to reduce the difference between actual and predicted values. This process helps the model make accurate
+predictions by minimizing errors step by step.
+
+One popular algorithm is Adam (Adaptive Moment Estimation) making it work well with large datasets and complex models because it uses memory 
+efficiently and adapts the learning rate for each parameter automatically.
+Adam works on two key concepts in optimization:
+    - Momentum
+        Momentum is used to accelerate the gradient descent process by incorporating an exponentially weighted moving average of past gradients.
+        This helps smooth out the trajectory of the optimization allowing the algorithm to converge faster by reducing oscillations.
+
+    - RMSprop (Root Mean Square Propagation)
+        RMSprop is an adaptive learning rate method that improves AdaGrad (another optimization method for training), by using an exponentially
+        weighted moving average of squared gradients to help overcome the problem of diminishing learning rates.
