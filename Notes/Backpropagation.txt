@@ -1,0 +1,36 @@
+Backpropagation
+
+Backpropagation, or Backward Propagation of Errors, is a key algorithm used to train neural networks by minimizing the difference
+between predicted and actual outputs. It calculates how changes to any of the weights or biases in the network will affect the
+accuracy of the model's predictions.
+
+Backpropagation plays a key role in how neural networks improve over time, such as:
+    - Efficient Weight Update
+        It computes the gradient of the loss function with respect to each weight using the chain rule making it possible to update
+        weights efficiently
+    - Scalability
+        The Back Propagation algorithm scales well to networks with multiple layers and complex architectures making deep learning feasible.
+    - Automated Learning
+        With Back Progatation the learning process becomes automated and the model can adjust itself to optimize its performance.
+
+Advantages to using Back Propagation algorithm include:
+    - Ease of Implementation
+        Back Propagation is beginner-friendly requiring no prior neural network knowledge and simplifies programming by adjusting weights
+        with error derivatives.
+    - Simplicity and Flexibility
+        Its straightforward design suits a range of tasks from basic feedforward to complex convolutional or recurrent networks.
+    - Efficiency
+        Back Propagation accelerates learning by directly updating weights based on error especially in deep networks.
+    - Generalization
+        It helps models generalize well to new data improving prediction accuracy on unseen examples.
+    - Scalability
+        The algorithm scales efficiently with larger datasets and more complex networks making it ideal for large-scale tasks.
+
+Disadvantages include:
+    - Vanishing Gradient Problem
+        In deep neural networks the gradient can become very small during Back Propagation making it difficult for networks to learn.
+        This is common when using activation functions like sigmoid or tanh.
+    - Exploding Gradients
+        The gradients can also become excessively large causing the network to diverge during training.
+    - Overfitting
+        If the network is too complex it might memorize the training data instead of learning general patterns.
