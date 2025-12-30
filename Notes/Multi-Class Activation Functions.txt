@@ -12,3 +12,22 @@ There are 2 main types of multi-class situations:
         EX: Photos can be categorized as being grayscale or full color but not both at the same time.
 
 To organize multiple classes, you must organize categories for the output layer.
+
+Non-Exclusive Function
+    - Sigmoid Function
+        Each neuron will output a value between 0 and 1, indicating the probability of having that class assigned to it.
+        It is a non-linear activation function.
+    - SoftPlus Function
+        Ensures that the output is always positive and differentiable at all points which is an advantage over the traditional ReLU function.
+        The function outputs values in the range 0 to positive infinity, similar to ReLU but without the hard 0 threshold.
+        SoftPlus is a smooth, continuous function, meaning it avoids the sharp discontinuities of ReLU which can sometimes lead to problems
+        during optimization.
+        It is a non-linear activation function.
+
+Mutually Exclusive Function
+    - Softmax Function
+        It transforms raw output scores from a neural network into probabilites. It works by squashing the output values of each class into the
+        range of 0 to 1 while ensuring that the sum of all probabilities equals 1.
+        Softmax function ensures that each clas sis assigned a probability, helping to identify which class the input belongs to.
+        It is a non-linear activation function.
+
