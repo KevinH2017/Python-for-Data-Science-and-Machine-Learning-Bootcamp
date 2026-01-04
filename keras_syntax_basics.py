@@ -82,10 +82,10 @@ print("Mean Absolute Error:", mae)
 print("Mean Squared Error:", mse)
 print("Root Mean Squared Error:", rmse)
 
-# # Scatter plot to show how accurate the model predictions are
-# sns.scatterplot(x='Test True Y', y='Model Predictions', data=pred_df)
-# # Display graph
-# plt.show()
+# Scatter plot to show how accurate the model predictions are
+sns.scatterplot(x='Test True Y', y='Model Predictions', data=pred_df)
+# Display graph
+plt.show()
 
 # Predicting value using brand new data
 # [[Feature 1, Feature 2]]
