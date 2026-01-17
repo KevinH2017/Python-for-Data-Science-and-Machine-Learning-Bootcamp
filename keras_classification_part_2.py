@@ -3,13 +3,10 @@
 # Import libraries
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import mean_squared_error, mean_absolute_error, explained_variance_score
 from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
+from keras.layers import Dense
 from keras.callbacks import EarlyStopping
 
 # Path to dataset
