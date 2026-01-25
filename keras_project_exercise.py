@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, confusion_matrix
 from keras.models import Sequential, load_model
 from keras.layers import Dense, Dropout
 
@@ -285,6 +285,8 @@ losses.plot()
 predictions = model.predict(X_test)
 predictions = (predictions > 0.5).astype(int)       # Fixes ValueError:Classification metrics can't handle a mix of binary and continuous targets
 print(classification_report(y_test, predictions))
+print("Confusion Matrix:")
+print(confusion_matrix(y_test, predictions))
 
 print("Counts of loans that have been repaid or not repaid:")
 print(df['loan_repaid'].value_counts())
