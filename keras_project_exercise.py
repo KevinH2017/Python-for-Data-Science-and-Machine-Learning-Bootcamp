@@ -1,4 +1,4 @@
-# Keras Project Exercise Part 3 - Categorical Variables and Dummy Variables
+# Keras Project Exercise
 
 # Import libraries
 import pandas as pd
