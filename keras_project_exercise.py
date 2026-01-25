@@ -7,11 +7,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import classification_report, confusion_matrix
-import tensorflow as tf
+from sklearn.metrics import classification_report
 from keras.models import Sequential, load_model
 from keras.layers import Dense, Dropout
-import random
 
 def feat_info(col_name):
     '''Prints the description of a feature from the data_info dataframe.'''
